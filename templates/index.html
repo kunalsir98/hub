@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span><i class="fas fa-bolt"></i> Powered by Groq & LangChain</span>
+    </div>
+    
+    <h1>Transform Ideas into<br>Production AI Applications</h1>
+    
+    <p class="hero-subtitle">
+      Enterprise-ready AI solutions built with cutting-edge technology. 
+      Launch, scale, and monitor your AI applications in one platform
+      Developed by-kunal chopde.
+    </p>
+    
+    <div class="hero-actions">
+      <a href="/apps" class="btn">
+        <i class="fas fa-play-circle"></i> Explore Apps
+      </a>
+      <a href="#" class="btn btn-secondary">
+        <i class="fas fa-book"></i> Documentation
+      </a>
+    </div>
+    
+    <div class="hero-stats">
+      <div class="stat">
+        <h3>100%</h3>
+        <p>Uptime</p>
+      </div>
+      <div class="stat">
+        <h3><i class="fas fa-bolt"></i></h3>
+        <p>Real-time Processing</p>
+      </div>
+      <div class="stat">
+        <h3>24/7</h3>
+        <p>Monitoring</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  .hero-badge i {
+    color: #8b5cf6;
+  }
+  
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat h3 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .hero-stats {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+</style>
+{% endblock %}
